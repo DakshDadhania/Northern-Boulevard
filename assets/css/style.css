@@ -144,6 +144,7 @@ body {
 
 .container { padding-inline: 15px; }
 
+
 button, a { transition: var(--transition); }
 
 .h1,
@@ -1123,7 +1124,13 @@ button, a { transition: var(--transition); }
 .copyright a:is(:hover, :focus) { color: var(--orange-soda); }
 
 
-
+.containermap {  
+  overflow-x: auto; /* Enables horizontal scrolling */
+  max-width: 100%; /* Ensures it doesn't exceed the viewport width */
+  margin-inline: auto; /* Centers the container if there's space */
+  padding-inline: 15px; /* Adjusted padding for smaller screens */
+  max-width: 500px;
+}
 
 
 /*-----------------------------------*\
@@ -1159,6 +1166,13 @@ button, a { transition: var(--transition); }
   .container {
     max-width: 550px;
     margin-inline: auto;
+  }
+  .containermap {  
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-width: 100%; /* Ensures it doesn't exceed the viewport width */
+    margin-inline: auto; /* Centers the container if there's space */
+    padding-inline: 15px; /* Adjusted padding for smaller screens */
+    max-width: 500px;
   }
 
   .has-scrollbar {
@@ -1277,6 +1291,13 @@ button, a { transition: var(--transition); }
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .containermap {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-width: 100%; /* Ensures it doesn't exceed the viewport width */
+    margin-inline: auto; /* Centers the container if there's space */
+    padding-inline: 15px; /* Adjusted padding for smaller screens */
+    
   }
 
   .header-bottom-actions-btn ion-icon { margin-bottom: 0; }
@@ -1422,6 +1443,12 @@ button, a { transition: var(--transition); }
     align-items: center;
   }
 
+  .containermap {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-width: 100%; /* Ensures it doesn't exceed the viewport width */
+    margin-inline: auto; /* Centers the container if there's space */
+    padding-inline: 15px; /* Adjusted padding for smaller screens */
+  }
 
 
   /**
@@ -1545,7 +1572,7 @@ button, a { transition: var(--transition); }
    */
 
   .container { max-width: 1200px; }
-
+  .containermap { max-width: 1200px; }
   .has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
 
 
