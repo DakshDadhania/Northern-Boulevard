@@ -8,6 +8,63 @@
 
 
 
+ html {
+  scroll-behavior: smooth;
+}
+
+
+ .contact-us {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  font-size: var(--fs-4);
+  font-weight: var(--font-weight, 700);
+ 
+}
+
+.contact-us h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.contact-us form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+.contact-us form input,
+.contact-us form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us form button {
+  align-self: center;
+  cursor: pointer;
+}
+.mobile-contact-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  z-index: 1000; /* Ensure it's above other content */
+  display: none; /* Initially hidden */
+}
+
+@media (max-width: 768px) {
+  .mobile-contact-btn {
+    display: block; /* Show only on mobile */
+  }
+}
 
 
 /*-----------------------------------*\
