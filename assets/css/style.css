@@ -47,25 +47,35 @@
   align-self: center;
   cursor: pointer;
 }
-.mobile-contact-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff5722;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 1000; /* Ensure it's above other content */
-  display: none; /* Initially hidden */
-}
+
 
 @media (max-width: 768px) {
-  .mobile-contact-btn {
-    display: block; /* Show only on mobile */
+  .contact-us form {
+    padding: 0 20px; /* Add padding for smaller screens */
+  }
+  
+  .contact-us form input,
+  .contact-us form textarea,
+  .contact-us form button {
+    width: calc(100% - 20px); /* Adjust width to fit smaller screens */
   }
 }
 
+@media (max-width: 480px) {
+  .contact-us form {
+    padding: 0 10px; /* Further reduce padding for very small screens */
+  }
+  
+  .contact-us form input,
+  .contact-us form textarea,
+  .contact-us form button {
+    width: calc(100% - 20px); /* Ensure elements are not too wide on small screens */
+  }
+
+  .contact-us h2 {
+    font-size: 1.5rem; /* Reduce the font size of the heading on small screens */
+  }
+}
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
