@@ -53,7 +53,10 @@
   .contact-us form {
     padding: 0 20px; /* Add padding for smaller screens */
   }
-  
+  .responsive-map {
+    width: 400px;
+    height: 250px;
+}
   .contact-us form input,
   .contact-us form textarea,
   .contact-us form button {
@@ -65,7 +68,10 @@
   .contact-us form {
     padding: 0 10px; /* Further reduce padding for very small screens */
   }
-  
+  .responsive-map {
+    width: 300px;
+    height: 150px;
+}
   .contact-us form input,
   .contact-us form textarea,
   .contact-us form button {
